@@ -20,6 +20,8 @@ class PredictionPipeline:
         # self.model_name = MODEL_NAME
         # self.model_path = os.path.join("artifacts", "PredictModel")
         # self.gcloud = GCloudSync()
+        DataTransformationConfig=DataTransformationConfig()
+        DataIngestionArtifacts=DataIngestionArtifacts()
         self.data_transformation = DataTransformation(data_transformation_config= DataTransformationConfig,data_ingestion_artifacts=DataIngestionArtifacts)
         self.best_model_path=model_path
        
